@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephen Tiliki — B2B Growth Copywriting Portfolio</title>
+<meta name="description" content="B2B growth copywriting portfolio: paid social, Google ads, OOH, landing pages, scripts and ebooks. Fintech and SaaS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3F5F8;
+    --card:#FFFFFF;
+    --ink:#10182B;
+    --muted:#5A6478;
+    --cobalt:#2240E8;
+    --cobalt-soft:#E8ECFE;
+    --amber:#B9750B;
+    --amber-soft:#FDF3E2;
+    --line:#D9DEE8;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+  body{background:var(--paper);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.sans{font-family:'Space Grotesk',sans-serif}
+  .mono{font-family:'IBM Plex Mono',monospace}
+  a{color:var(--cobalt)}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  /* Nav */
+  nav{position:sticky;top:0;background:rgba(243,245,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  .navin{max-width:880px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .navname{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:.02em;font-size:15px}
+  .navlinks{display:flex;gap:18px;font-family:'Space Grotesk',sans-serif;font-size:13.5px}
+  .navlinks a{color:var(--muted);text-decoration:none}
+  .navlinks a:hover,.navlinks a:focus{color:var(--cobalt)}
+  @media(max-width:620px){.navlinks{display:none}}
+
+  /* Hero */
+  header{padding:84px 0 64px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-family:'Space Grotesk',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+  .eyebrow b{color:var(--cobalt);font-weight:700}
+  h1{font-size:clamp(34px,6vw,56px);line-height:1.08;letter-spacing:-.015em;font-weight:700;max-width:760px;min-height:2.16em}
+  .abrow{display:flex;align-items:center;gap:12px;margin:26px 0 22px}
+  .abtoggle{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+  .abtoggle button{font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:7px 16px;border:none;background:transparent;color:var(--muted);cursor:pointer}
+  .abtoggle button.on{background:var(--cobalt);color:#fff}
+  .abtoggle button:focus-visible{outline:2px solid var(--cobalt);outline-offset:2px}
+  .abnote{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted)}
+  .lede{font-size:19px;max-width:640px;color:var(--ink)}
+  .lede em{color:var(--muted)}
+  .heroctas{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font-family:'Space Grotesk',sans-serif;font-size:14.5px;font-weight:500;text-decoration:none;padding:11px 20px;border-radius:999px}
+  .btn.primary{background:var(--cobalt);color:#fff}
+  .btn.ghost{border:1px solid var(--line);color:var(--ink);background:var(--card)}
+
+  /* Sample sections */
+  section.sample{padding:60px 0;border-bottom:1px solid var(--line)}
+  .stag{display:inline-flex;gap:10px;align-items:center;font-family:'Space Grotesk',sans-serif;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .stag .num{color:var(--cobalt);font-weight:700}
+  .funnel{background:var(--cobalt-soft);color:var(--cobalt);padding:2px 10px;border-radius:999px;font-weight:500;letter-spacing:.06em}
+  h2{font-size:clamp(24px,3.6vw,32px);letter-spacing:-.01em;margin-bottom:10px}
+  .brief{color:var(--muted);max-width:640px;margin-bottom:8px}
+  .spec{display:inline-block;background:var(--amber-soft);color:var(--amber);font-family:'IBM Plex Mono',monospace;font-size:12px;padding:4px 10px;border-radius:6px;margin:8px 0 22px}
+  .cards{display:grid;gap:18px;margin-top:18px}
+  @media(min-width:720px){.cards.three{grid-template-columns:repeat(3,1fr)}.cards.two{grid-template-columns:repeat(2,1fr)}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .card h3{font-size:15px;margin-bottom:10px;color:var(--cobalt)}
+  .card .hook{font-weight:600;font-size:17px;margin-bottom:8px}
+  .card p{font-size:15.5px;margin-bottom:10px}
+  .cta-chip{display:inline-block;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:500;background:var(--ink);color:#fff;padding:6px 14px;border-radius:8px}
+  .why{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px;font-size:13.5px;color:var(--muted);font-style:italic}
+
+  /* Google ads */
+  .gads{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-top:18px}
+  .gads h3{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:18px 0 10px}
+  .gads h3:first-child{margin-top:0}
+  .adline{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--paper);font-size:15.5px}
+  .adline:last-child{border-bottom:none}
+  .count{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);white-space:nowrap}
+  .kwnote{margin-top:16px;font-size:13.5px;color:var(--muted);font-style:italic}
+
+  /* OOH */
+  .ooh{display:grid;gap:18px;margin-top:18px}
+  @media(min-width:720px){.ooh{grid-template-columns:repeat(2,1fr)}}
+  .board{background:var(--ink);color:#fff;border-radius:var(--radius);padding:34px 26px;display:flex;flex-direction:column;justify-content:space-between;min-height:200px}
+  .board .line{font-family:'Space Grotesk',sans-serif;font-size:clamp(19px,2.4vw,23px);font-weight:700;line-height:1.25;letter-spacing:-.01em}
+  .board .place{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9AA4BD;margin-top:22px}
+
+  /* Landing page mock */
+  .lpmock{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:18px}
+  .lp-bar{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line)}
+  .lp-bar span{width:9px;height:9px;border-radius:50%;background:var(--line)}
+  .lp-body{padding:34px 30px}
+  .lp-body .lp-eyebrow{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cobalt);margin-bottom:10px}
+  .lp-body h3{font-size:clamp(22px,3vw,28px);letter-spacing:-.01em;margin-bottom:10px}
+  .lp-body .sub{color:var(--muted);max-width:520px}
+  .lp-ctas{display:flex;gap:12px;margin:18px 0 8px;flex-wrap:wrap}
+  .lp-proof{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);margin-top:8px}
+  .lp-feats{display:grid;gap:14px;margin-top:26px}
+  @media(min-width:720px){.lp-feats{grid-template-columns:repeat(3,1fr)}}
+  .lp-feat h4{font-family:'Space Grotesk',sans-serif;font-size:15px;margin-bottom:6px}
+  .lp-feat p{font-size:14px;color:var(--muted)}
+  .lp-objection{margin-top:26px;padding:18px;background:var(--paper);border-radius:10px;font-size:15px}
+  .lp-final{margin-top:26px;text-align:center;padding:22px;border-top:1px solid var(--line)}
+  .lp-final p{font-family:'Space Grotesk',sans-serif;font-weight:500;margin-bottom:12px}
+
+  /* Script table */
+  .script{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:18px}
+  .scriptrow{display:grid;grid-template-columns:64px 1fr 1fr;border-bottom:1px solid var(--paper)}
+  .scriptrow:last-child{border-bottom:none}
+  .scriptrow div{padding:14px 16px;font-size:14.5px}
+  .scriptrow .t{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted)}
+  .scriptrow .v{color:var(--muted)}
+  .scripthead div{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:12px 16px;border-bottom:1px solid var(--line)}
+  @media(max-width:620px){.scriptrow{grid-template-columns:48px 1fr 1fr}.scriptrow div{padding:10px;font-size:13px}}
+
+  /* Ebook */
+  .ebook{display:grid;gap:22px;margin-top:18px}
+  @media(min-width:760px){.ebook{grid-template-columns:280px 1fr}}
+  .cover{background:linear-gradient(160deg,var(--cobalt) 0%,#101A52 100%);border-radius:var(--radius);color:#fff;padding:30px 24px;display:flex;flex-direction:column;justify-content:space-between;min-height:340px}
+  .cover .ck{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#A9B6F2}
+  .cover h3{font-size:24px;line-height:1.2;margin-top:14px}
+  .cover .csub{font-size:14px;color:#C9D2F7;margin-top:10px;font-family:'Source Serif 4',serif}
+  .ebook .chapters{font-size:15px}
+  .ebook .chapters li{margin:0 0 8px 20px}
+  .ebook h4{font-family:'Space Grotesk',sans-serif;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}
+  .ebook h4:first-child{margin-top:0}
+  .excerpt{border-left:3px solid var(--cobalt);padding-left:18px;font-style:italic;color:#39425A}
+
+  /* Clients + footer */
+  .clients{padding:54px 0;border-bottom:1px solid var(--line)}
+  .clientrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+  .clientrow span{font-family:'Space Grotesk',sans-serif;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 18px}
+  footer{padding:60px 0 80px}
+  footer h2{margin-bottom:8px}
+  .foot-note{color:var(--muted);font-size:14px;margin-top:26px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="navin">
+    <span class="navname">STEPHEN TILIKI</span>
+    <div class="navlinks">
+      <a href="#s1">Paid social</a>
+      <a href="#s2">Search ads</a>
+      <a href="#s3">OOH</a>
+      <a href="#s4">Landing page</a>
+      <a href="#s5">Script</a>
+      <a href="#s6">Ebook</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow"><b>B2B Growth Copywriting</b> &nbsp;·&nbsp; Fintech & SaaS &nbsp;·&nbsp; Lisbon, Portugal</p>
+    <h1 id="heroHead">Copy that earns its keep.</h1>
+    <div class="abrow">
+      <div class="abtoggle" role="group" aria-label="Headline variant toggle">
+        <button id="va" class="on" aria-pressed="true">Variant A</button>
+        <button id="vb" aria-pressed="false">Variant B</button>
+      </div>
+      <span class="abnote">Even this headline is being tested.</span>
+    </div>
+    <p class="lede">Six samples across the full funnel: paid social, Google Search, out-of-home, a landing page, a video script and an ebook. Written for fintech and SaaS audiences, built to be measured. <em>Spec pieces are labelled as spec.</em></p>
+    <div class="heroctas">
+      <a class="btn primary" href="mailto:stephenpundit@gmail.com">Get in touch</a>
+      <a class="btn ghost" href="https://stephenonoms.github.io/portfolio/" target="_blank" rel="noopener">Long-form portfolio ↗</a>
+    </div>
+  </div>
+</header>
+
+<!-- 01 PAID SOCIAL -->
+<section class="sample" id="s1">
+  <div class="wrap">
+    <p class="stag"><span class="num">01</span> Paid social · LinkedIn <span class="funnel">TOFU–MOFU</span></p>
+    <h2>Three angles, one product: Revolut Business</h2>
+    <p class="brief">A single-image LinkedIn campaign targeting founders and finance leads at SMEs trading internationally. Three variants testing three distinct motivations, written to isolate which pain converts.</p>
+    <span class="spec">SPEC WORK — created for this application, not commissioned by Revolut</span>
+    <div class="cards three">
+      <div class="card">
+        <h3>Variant A · The cost angle</h3>
+        <p class="hook">Your bank takes a cut every time you pay a supplier abroad.</p>
+        <p>Revolut Business gives you exchange at the interbank rate, accounts in 25+ currencies and one dashboard to see it all. The money you save is not a rounding error.</p>
+        <span class="cta-chip">See your FX savings</span>
+        <p class="why">Why: leads with a quantifiable pain. Built for cold audiences, where a number beats a feeling.</p>
+      </div>
+      <div class="card">
+        <h3>Variant B · The time angle</h3>
+        <p class="hook">Finance admin is a full-time job. Yours, apparently.</p>
+        <p>Automate expenses, approvals and payments with Revolut Business. Close the month in hours, not weeks, and get back to running the company.</p>
+        <span class="cta-chip">Start in minutes</span>
+        <p class="why">Why: an emotional angle aimed at founders wearing the CFO hat. Tests humour against Variant A's hard numbers.</p>
+      </div>
+      <div class="card">
+        <h3>Variant C · The scale angle</h3>
+        <p class="hook">Selling in 12 markets shouldn't mean 12 bank accounts.</p>
+        <p>Local accounts, global payments and team cards with controls built in. Revolut Business grows with you, wherever your customers are.</p>
+        <span class="cta-chip">Open your account</span>
+        <p class="why">Why: bottom-leaning copy for warm retargeting audiences already comparing multi-market solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 GOOGLE ADS -->
+<section class="sample" id="s2">
+  <div class="wrap">
+    <p class="stag"><span class="num">02</span> Google Search · Responsive ad <span class="funnel">BOFU</span></p>
+    <h2>Writing inside the character limit</h2>
+    <p class="brief">A responsive search ad for Ledgerly, a fictional spend-management SaaS, targeting the high-intent ad group "spend management software". Every headline under 30 characters, every description under 90 — counted, because discipline is the craft here.</p>
+    <span class="spec">SPEC WORK — Ledgerly is a fictional brand created for this portfolio</span>
+    <div class="gads">
+      <h3>Headlines (max 30 characters)</h3>
+      <div class="adline"><span>Spend Management That Scales</span><span class="count">28/30</span></div>
+      <div class="adline"><span>Close the Books 5x Faster</span><span class="count">25/30</span></div>
+      <div class="adline"><span>Company Cards With Controls</span><span class="count">27/30</span></div>
+      <div class="adline"><span>Stop Chasing Receipts</span><span class="count">21/30</span></div>
+      <div class="adline"><span>Real-Time Spend Visibility</span><span class="count">26/30</span></div>
+      <div class="adline"><span>Free Your Finance Team</span><span class="count">22/30</span></div>
+      <div class="adline"><span>Try Ledgerly Free for 30 Days</span><span class="count">29/30</span></div>
+      <div class="adline"><span>Built for Growing B2B Teams</span><span class="count">27/30</span></div>
+      <h3>Descriptions (max 90 characters)</h3>
+      <div class="adline"><span>Issue cards, set limits and approve spend in one dashboard. Set up in under ten minutes.</span><span class="count">88/90</span></div>
+      <div class="adline"><span>Every receipt matched, every transaction coded. Month-end close without the chase.</span><span class="count">82/90</span></div>
+      <div class="adline"><span>See where every euro goes, as it goes. Real-time spend tracking for growing teams.</span><span class="count">82/90</span></div>
+      <div class="adline"><span>No setup fees, no long contracts. Start free and cancel any time.</span><span class="count">65/90</span></div>
+      <p class="kwnote">Headlines mix proof ("5x faster"), pain relief ("stop chasing receipts") and risk reversal ("free for 30 days") so Google's algorithm can assemble combinations for different query intents.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 OOH -->
+<section class="sample" id="s3">
+  <div class="wrap">
+    <p class="stag"><span class="num">03</span> OOH / DOOH <span class="funnel">Brand · TOFU</span></p>
+    <h2>Six seconds of attention, used well</h2>
+    <p class="brief">Out-of-home concepts for Meridian, a fictional business banking brand. Each line is written for its placement — because a billboard read at 60 km/h and a screen watched in a departure lounge are different briefs.</p>
+    <span class="spec">SPEC WORK — Meridian is a fictional brand created for this portfolio</span>
+    <div class="ooh">
+      <div class="board">
+        <p class="line">You're flying out to close the deal. Your bank should keep up.</p>
+        <p class="place">STATIC · AIRPORT BUSINESS LOUNGE — long dwell time allows a two-clause line</p>
+      </div>
+      <div class="board">
+        <p class="line">Approve it before the train doors close.</p>
+        <p class="place">DOOH · COMMUTER RAIL PLATFORM — seven words for a seven-second glance</p>
+      </div>
+      <div class="board">
+        <p class="line">Still at your desk? Your payments cleared hours ago.</p>
+        <p class="place">DOOH · FINANCIAL DISTRICT, DAYPARTED 17:00–21:00 — the copy knows what time it is</p>
+      </div>
+      <div class="board">
+        <p class="line">Built for businesses still being built.</p>
+        <p class="place">STATIC · HOARDING NEAR STARTUP HUB — placement is the punchline</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 LANDING PAGE -->
+<section class="sample" id="s4">
+  <div class="wrap">
+    <p class="stag"><span class="num">04</span> Landing page <span class="funnel">MOFU–BOFU</span></p>
+    <h2>Where the search ads send people</h2>
+    <p class="brief">The landing page that receives traffic from the Ledgerly search campaign above — written as one continuous funnel, with message match between ad and page, objection handling and a single conversion goal.</p>
+    <span class="spec">SPEC WORK — continues the fictional Ledgerly brand</span>
+    <div class="lpmock">
+      <div class="lp-bar"><span></span><span></span><span></span></div>
+      <div class="lp-body">
+        <p class="lp-eyebrow">Ledgerly · Spend Management</p>
+        <h3>Spend management your finance team will actually thank you for.</h3>
+        <p class="sub">Issue cards, set limits, approve requests and close the month from one dashboard. Set up in ten minutes, not ten meetings.</p>
+        <div class="lp-ctas">
+          <span class="btn primary">Start free trial</span>
+          <span class="btn ghost">Book a 15-minute demo</span>
+        </div>
+        <p class="lp-proof">★ 4.8 on G2 · Trusted by 2,000+ finance teams · No card required</p>
+        <div class="lp-feats">
+          <div class="lp-feat">
+            <h4>Cards with rules attached</h4>
+            <p>Issue virtual or physical cards in seconds, each with its own limit, category and expiry. Spend stays inside policy because the card enforces it.</p>
+          </div>
+          <div class="lp-feat">
+            <h4>Receipts that chase themselves</h4>
+            <p>Employees snap a photo, Ledgerly matches it to the transaction and codes it. Your team stops being a collections agency.</p>
+          </div>
+          <div class="lp-feat">
+            <h4>Month-end in an afternoon</h4>
+            <p>Real-time syncing with your accounting stack means the close starts already 90% done. The last week of the month becomes a normal week.</p>
+          </div>
+        </div>
+        <div class="lp-objection">
+          <strong>"Switching sounds painful."</strong> It isn't. Connect your accounting software, import your team and issue your first card in one session. Most teams run Ledgerly alongside their old process for one cycle, then switch off the spreadsheet for good.
+        </div>
+        <div class="lp-final">
+          <p>The free trial is 30 days. The spreadsheet has had five years.</p>
+          <span class="btn primary">Start free trial</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 SCRIPT -->
+<section class="sample" id="s5">
+  <div class="wrap">
+    <p class="stag"><span class="num">05</span> Video script · 30s paid social <span class="funnel">MOFU</span></p>
+    <h2>Thirty seconds, one idea</h2>
+    <p class="brief">A paid social video script for Ledgerly, built around a single visual metaphor: the expense report graveyard. Written sound-off first — the captions carry the story, the voiceover rewards the people who unmute.</p>
+    <span class="spec">SPEC WORK — continues the fictional Ledgerly brand</span>
+    <div class="script">
+      <div class="scriptrow scripthead"><div>Time</div><div>Visual</div><div>VO / Caption</div></div>
+      <div class="scriptrow"><div class="t">0–4s</div><div class="v">Top-down shot: a desk buried in crumpled receipts. A hand drops one more on the pile.</div><div>Somewhere in your company, there is a drawer like this.</div></div>
+      <div class="scriptrow"><div class="t">4–10s</div><div class="v">Quick cuts: a receipt in a jacket pocket, one in a car door, one used as a bookmark.</div><div>And a pocket. And a glovebox. Every one of them is money you can't account for.</div></div>
+      <div class="scriptrow"><div class="t">10–18s</div><div class="v">Cut to phone: employee photographs a receipt. UI shows it matching to a card transaction, auto-coded.</div><div>Ledgerly matches every receipt to every transaction, the moment it happens.</div></div>
+      <div class="scriptrow"><div class="t">18–25s</div><div class="v">Dashboard view: month-end close progress bar already at 90%. Finance lead closes laptop, lights off.</div><div>So month-end starts almost finished. And finance goes home on time.</div></div>
+      <div class="scriptrow"><div class="t">25–30s</div><div class="v">Logo on clean white. The receipt pile from the open, now neatly dissolving into pixels.</div><div>Ledgerly. Spend, sorted. <strong>Start your free trial.</strong></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 EBOOK -->
+<section class="sample" id="s6">
+  <div class="wrap">
+    <p class="stag"><span class="num">06</span> Ebook · Lead magnet <span class="funnel">MOFU</span></p>
+    <h2>Long-form that feeds the funnel</h2>
+    <p class="brief">A gated ebook concept for Ledgerly, designed to capture mid-funnel leads: founders running finance without a finance hire. Cover blurb, chapter structure and an excerpt from chapter one.</p>
+    <span class="spec">SPEC WORK — continues the fictional Ledgerly brand</span>
+    <div class="ebook">
+      <div class="cover">
+        <p class="ck">Ledgerly Guides · No. 01</p>
+        <div>
+          <h3>The CFO-less Company</h3>
+          <p class="csub">A founder's guide to running finance before your first finance hire</p>
+        </div>
+        <p class="ck">Free download · 38 pages</p>
+      </div>
+      <div>
+        <h4>Back-cover blurb</h4>
+        <p>Most companies don't hire a finance lead until they pass 50 people. Until then, finance is whoever lost the coin toss. This guide is for that person: a plain-language playbook covering the systems, habits and guardrails that keep a growing company's money under control — without an accounting degree, and without giving up your evenings to a spreadsheet.</p>
+        <h4>Chapters</h4>
+        <ol class="chapters">
+          <li>The accidental CFO: what you actually need to control (and what can wait)</li>
+          <li>Cash visibility: the one dashboard worth building this week</li>
+          <li>Spend policy without the policy document</li>
+          <li>The month-end close, demystified in five steps</li>
+          <li>When to outsource, when to automate, when to hire</li>
+          <li>The handover: setting up your first finance hire to succeed</li>
+        </ol>
+        <h4>Excerpt — Chapter 1</h4>
+        <p class="excerpt">Nobody plans to become the finance person. It happens the way most jobs happen at a startup: a thing needed doing, you were nearest to it, and now it's yours. Six months later you're approving expenses on a Sunday and wondering when, exactly, you agreed to this. Here's the good news: running finance at a growing company is not about knowing accounting. It's about controlling three numbers and building systems that watch them for you. This guide is about those three numbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients">
+  <div class="wrap">
+    <p class="stag"><span class="num">+</span> Published work</p>
+    <h2>Five years of B2B content for real clients</h2>
+    <p class="brief">The spec work above shows ad craft. The long-form record sits behind it: 200+ published pieces across fintech, SaaS, cybersecurity and e-commerce.</p>
+    <div class="clientrow">
+      <span>Alibaba Group</span>
+      <span>DistantJob</span>
+      <span>ThinkRemote</span>
+      <span>FloatCare</span>
+      <span>Accelerate Agency client portfolio</span>
+      <span>Trend Online</span>
+    </div>
+    <p class="foot-note">Long-form samples and published links: <a href="https://stephenonoms.github.io/portfolio/" target="_blank" rel="noopener">stephenonoms.github.io/portfolio</a></p>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's talk copy.</h2>
+    <p class="brief">Stephen Tiliki · B2B copywriter, Lisbon (CET) · MSc Digital Marketing & Analytics, NOVA IMS</p>
+    <div class="heroctas">
+      <a class="btn primary" href="mailto:stephenpundit@gmail.com">stephenpundit@gmail.com</a>
+      <a class="btn ghost" href="tel:+351920613332">+351 920 613 332</a>
+    </div>
+    <p class="foot-note">All spec work on this page was created independently as portfolio material. Revolut samples are unsolicited concepts and imply no affiliation. Ledgerly and Meridian are fictional brands. © 2026 Stephen Tiliki.</p>
+  </div>
+</footer>
+
+<script>
+  const heads = {
+    a: "Copy that earns its keep.",
+    b: "Words, measured in conversions."
+  };
+  const h = document.getElementById('heroHead');
+  const va = document.getElementById('va');
+  const vb = document.getElementById('vb');
+  function setVariant(v){
+    h.textContent = heads[v];
+    va.classList.toggle('on', v==='a');
+    vb.classList.toggle('on', v==='b');
+    va.setAttribute('aria-pressed', v==='a');
+    vb.setAttribute('aria-pressed', v==='b');
+  }
+  va.addEventListener('click', ()=>setVariant('a'));
+  vb.addEventListener('click', ()=>setVariant('b'));
+</script>
+</body>
+</html>
